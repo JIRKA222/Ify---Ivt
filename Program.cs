@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +17,12 @@ namespace IFY___Ivt
             Random rnd = new Random();
 
             Console.Write("Jméno\t"); Console.Write("Předmet\t\t\t\t\t\t\t\t\t\t"); Console.Write("Průmer\t"); Console.Write("Výsledek");
+            Console.WriteLine();
+            Console.Write("\t");
+            for(int i = 0; i < Predmety.Length; i++)
+            {
+                Console.Write(Predmety[i] + "\t");
+            }
             Console.WriteLine();
             for (int i = 0; i < Jmena.Length; i++)
             {
@@ -56,3 +62,4 @@ namespace IFY___Ivt
         }
     }
 }
+
